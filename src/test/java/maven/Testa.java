@@ -10,7 +10,10 @@ public class Testa
 	@Test
 	public void runChrome()
 	{
-		WebDriverManager.chromedriver().setup();
+		String chromeDriverPath = System.getProperty("user.dir")+"/chromedriver";
+		System.out.println(chromeDriverPath);
+//		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.google.com");
 		// driver.quit();
