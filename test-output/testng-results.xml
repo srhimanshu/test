@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-26T19:14:35 IST" name="Default suite" finished-at="2022-05-26T19:14:38 IST" duration-ms="2986">
+  <suite started-at="2022-05-26T19:20:41 IST" name="Default suite" finished-at="2022-05-26T19:20:44 IST" duration-ms="2801">
     <groups>
     </groups>
-    <test started-at="2022-05-26T19:14:35 IST" name="Default test" finished-at="2022-05-26T19:14:38 IST" duration-ms="2986">
+    <test started-at="2022-05-26T19:20:41 IST" name="Default test" finished-at="2022-05-26T19:20:44 IST" duration-ms="2801">
       <class name="maven.Testa">
-        <test-method signature="runChrome()[pri:0, instance:maven.Testa@36916eb0]" started-at="2022-05-26T19:14:35 IST" name="runChrome" finished-at="2022-05-26T19:14:38 IST" duration-ms="2959" status="PASS">
+        <test-method signature="runChrome()[pri:0, instance:maven.Testa@21282ed8]" started-at="2022-05-26T19:20:41 IST" name="runChrome" finished-at="2022-05-26T19:20:44 IST" duration-ms="2771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runChrome -->
