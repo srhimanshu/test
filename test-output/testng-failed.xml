@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="4" parallel="tests" name="Failed suite [Suite Name]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="Chrome Overlay(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="distribution_type" value="overlay"/>
     <classes>
       <class name="maven.Testa">
         <methods>
-          <include name="runChrome"/>
+          <include name="Image"/>
+          <include name="setup"/>
+          <include name="end"/>
         </methods>
       </class> <!-- maven.Testa -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Chrome Overlay(failed) -->
+</suite> <!-- Failed suite [Suite Name] -->

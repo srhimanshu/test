@@ -5,7 +5,20 @@
     <classes>
       <class name="maven.Testa">
         <methods>
-          <include name="runChrome"/>
+          <include name="Markdown"/>
+          <include name="Location"/>
+          <include name="ClickToDial"/>
+          <include name="setup"/>
+          <include name="end"/>
+          <include name="VideoVimeo"/>
+          <include name="Image"/>
+          <include name="VideoMp4"/>
+          <include name="Iframe"/>
+          <include name="Richtext"/>
+          <include name="VideoYoutube"/>
+          <include name="Carousel"/>
+          <include name="Social"/>
+          <include name="Action"/>
         </methods>
       </class> <!-- maven.Testa -->
     </classes>
