@@ -154,20 +154,20 @@ public class Testa
 		click("//div[@class='row']/button");
 	}
 	
-	@Test
-	public void VideoMp4() throws InterruptedException
-	{
-		// 10. Video mp4 Smart Block with Autoplay Functionality
-		click("//div[contains(text(),'Video Mp4')]");
+	//@Test
+// 	public void VideoMp4() throws InterruptedException
+// 	{
+// 		// 10. Video mp4 Smart Block with Autoplay Functionality
+// 		click("//div[contains(text(),'Video Mp4')]");
 
-		// To verify Autoplay functionality
-		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
+// 		// To verify Autoplay functionality
+// 		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
 
-		// To click on Skip and Verify main video autoplay
-		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
+// 		// To click on Skip and Verify main video autoplay
+// 		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
 
-		click("//div[@class='row']/button");
-	}
+// 		click("//div[@class='row']/button");
+// 	}
 	
 	@Test
 	public void VideoVimeo() throws InterruptedException
