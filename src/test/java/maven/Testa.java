@@ -62,6 +62,7 @@ public class Testa
 			System.setProperty("webdriver.firefox.driver", firefoxDriverPath);
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--headless");
+			options.addArguments("--window-size=1920,1080");
 			driver = new FirefoxDriver(options);
 			driver.manage().window().maximize();
 			wait = new WebDriverWait(driver, Duration.ofSeconds(20));
