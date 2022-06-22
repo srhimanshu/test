@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite Name" parallel="tests" thread-count="1">
-	<test name="Chrome Video">
+	<test name="Chrome  Video">
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="distribution_type" value="video"></parameter>
 		<classes>
