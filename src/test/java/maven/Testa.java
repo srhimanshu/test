@@ -122,20 +122,20 @@ public class Testa
 		click("//div[@class='row']/button");
 	}
 	
-	@Test
-	public void VideoYoutube() throws InterruptedException
-	{
-		// 5. Video Youtube With AutoPlay Functionality
-		click("//div[contains(text(),'VideoYoutube')]");
+// 	@Test
+// 	public void VideoYoutube() throws InterruptedException
+// 	{
+// 		// 5. Video Youtube With AutoPlay Functionality
+// 		click("//div[contains(text(),'VideoYoutube')]");
 
-		// To verify Autoplay functionality
-		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
+// 		// To verify Autoplay functionality
+// 		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
 
-		// To click on Skip and Verify main video autoplay
-		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
+// 		// To click on Skip and Verify main video autoplay
+// 		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
 
-		click("//div[@class='row']/button");
-	}
+// 		click("//div[@class='row']/button");
+// 	}
 	
 	@Test
 	public void Carousel() throws InterruptedException
@@ -169,20 +169,20 @@ public class Testa
 // 		click("//div[@class='row']/button");
 // 	}
 	
-	@Test
-	public void VideoVimeo() throws InterruptedException
-	{
-		// 11. Video Vimeo Smart Block with Autoplay Functionlaity
-		click("//div[contains(text(),'VideoVimeo')]");
+// 	@Test
+// 	public void VideoVimeo() throws InterruptedException
+// 	{
+// 		// 11. Video Vimeo Smart Block with Autoplay Functionlaity
+// 		click("//div[contains(text(),'VideoVimeo')]");
 
-		// To verify Autoplay functionality
-		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
+// 		// To verify Autoplay functionality
+// 		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
 
-		// To click on Skip and Verify main video autoplay
-		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
+// 		// To click on Skip and Verify main video autoplay
+// 		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
 
-		click("//div[@class='row']/button");
-	}
+// 		click("//div[@class='row']/button");
+// 	}
 	
 	@Test
 	public void Richtext() throws InterruptedException
