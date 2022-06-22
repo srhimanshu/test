@@ -8,16 +8,16 @@
 		<classes>
 			<class name="maven.Testa"></class>
 		</classes>
-	</test> -->
+	</test>
 	 <test name="Chrome Overlay">
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="distribution_type" value="overlay"></parameter>
 		<classes>
 			<class name="maven.Testa"></class>
 		</classes>
-	</test>
+	</test> -->
 	
-<!-- 	<test name="Firefox Video">
+	<test name="Firefox Video">
 		<parameter name="browser" value="firefox"></parameter>
 		<parameter name="distribution_type" value="video"></parameter>
 		<classes>
@@ -25,7 +25,7 @@
 		</classes>
 	</test>
 	
-	<test name="Firefox Overlay">
+<!-- 	<test name="Firefox Overlay">
 		<parameter name="browser" value="firefox"></parameter>
 		<parameter name="distribution_type" value="overlay"></parameter>
 		<classes>
