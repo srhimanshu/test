@@ -1,8 +1,8 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite Name" parallel="tests" thread-count="1">
-<!-- 	<test name="Chrome  Video">
+<suite name="Suite Name" parallel="tests" thread-count="3">
+ 	<test name="Chrome  Video">
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="distribution_type" value="video"></parameter>
 		<classes>
@@ -15,21 +15,21 @@
 		<classes>
 			<class name="maven.Testa"></class>
 		</classes>
-	</test> -->
+	</test> 
 	
-	<test name="Firefox Video">
+	<!--<test name="Firefox Video">
 		<parameter name="browser" value="firefox"></parameter>
 		<parameter name="distribution_type" value="video"></parameter>
 		<classes>
 			<class name="maven.Testa"></class>
 		</classes>
-	</test>
+	</test>-->
 	
-<!-- 	<test name="Firefox Overlay">
+ 	<test name="Firefox Overlay">
 		<parameter name="browser" value="firefox"></parameter>
 		<parameter name="distribution_type" value="overlay"></parameter>
 		<classes>
 			<class name="maven.Testa"></class>
 		</classes>
-	</test> -->
+	</test> 
 </suite>
