@@ -18,7 +18,7 @@
 	</test> -->
 	
 	<test name="Firefox Video">
-		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
 		<parameter name="distribution_type" value="video"></parameter>
 		<classes>
 			<class name="maven.Testa"></class>
