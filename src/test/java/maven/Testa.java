@@ -45,14 +45,16 @@ public class Testa
 			if(distribution_type.equals("video"))
 			{
 				driver.get("https://experience-stg.sourcesync.io/213");
-
+				System.out.println("url launched");
 				// Play Video
 				click("//div[@class='plyr__controls']/button[1]");
+				System.out.println("main video played");
 			}
 			
 			else
 			{
 				driver.get("https://experience-stg.sourcesync.io/214");
+				System.out.println("url launched");
 			}
 		}
 		
