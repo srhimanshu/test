@@ -105,16 +105,16 @@ public class Testa
 // 		click("//div[@class='row']/button");
 // 	}
 	
-	@Test
-	public void Social() throws InterruptedException
-	{
-		// 3. Social Smart Block
-		click("//div[contains(text(),'Social')]");
+// 	@Test
+// 	public void Social() throws InterruptedException
+// 	{
+// 		// 3. Social Smart Block
+// 		click("//div[contains(text(),'Social')]");
 
-		// Click Social Media Icons
-		SocialIcons();
-		click("//div[@class='row']/button");
-	}
+// 		// Click Social Media Icons
+// 		SocialIcons();
+// 		click("//div[@class='row']/button");
+// 	}
 	
 // 	@Test
 // 	public void Location() throws InterruptedException
