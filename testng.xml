@@ -21,7 +21,7 @@
 		<parameter name="browser" value="firefox"></parameter>
 		<parameter name="distribution_type" value="video"></parameter>
 		<classes>
-			<class name="maven.Testb"></class>
+			<class name="maven.Testa"></class>
 		</classes>
 	</test>
 	
