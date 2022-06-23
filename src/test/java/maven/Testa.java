@@ -83,27 +83,27 @@ public class Testa
 		}
 	}
 
-	@Test 
-	public void Image() throws InterruptedException 
-	{
-		// 1. Image Smart Block
-		click("//div[contains(text(),'Image')]");
-
-		// Get Height and Width of Image
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='q-img__image absolute-full']")));
-		System.out.println(driver.findElement(By.xpath("//div[@class='q-img__image absolute-full']")).getCssValue("height"));
-		System.out.println(driver.findElement(By.xpath("//div[@class='q-img__image absolute-full']")).getCssValue("width"));
-		
-		click("//div[@class='row']/button");
-	}
-	
-// 	@Test
-// 	public void Markdown() throws InterruptedException
+// 	@Test 
+// 	public void Image() throws InterruptedException 
 // 	{
-// 		// 2. Markdown Smart Block
-// 		click("//div[contains(text(),'Markdown')]");
+// 		// 1. Image Smart Block
+// 		click("//div[contains(text(),'Image')]");
+
+// 		// Get Height and Width of Image
+// 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='q-img__image absolute-full']")));
+// 		System.out.println(driver.findElement(By.xpath("//div[@class='q-img__image absolute-full']")).getCssValue("height"));
+// 		System.out.println(driver.findElement(By.xpath("//div[@class='q-img__image absolute-full']")).getCssValue("width"));
+		
 // 		click("//div[@class='row']/button");
 // 	}
+	
+	@Test
+	public void Markdown() throws InterruptedException
+	{
+		// 2. Markdown Smart Block
+		click("//div[contains(text(),'Markdown')]");
+		click("//div[@class='row']/button");
+	}
 	
 // 	@Test
 // 	public void Social() throws InterruptedException
