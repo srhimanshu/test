@@ -83,127 +83,127 @@ public class Testa
 		}
 	}
 
-	@Test 
-	public void Image() throws InterruptedException 
-	{
-		// 1. Image Smart Block
-		click("//div[contains(text(),'Image')]");
+// 	@Test 
+// 	public void Image() throws InterruptedException 
+// 	{
+// 		// 1. Image Smart Block
+// 		click("//div[contains(text(),'Image')]");
 
-		// Get Height and Width of Image
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='q-img__image absolute-full']")));
-		System.out.println(driver.findElement(By.xpath("//div[@class='q-img__image absolute-full']")).getCssValue("height"));
-		System.out.println(driver.findElement(By.xpath("//div[@class='q-img__image absolute-full']")).getCssValue("width"));
+// 		// Get Height and Width of Image
+// 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='q-img__image absolute-full']")));
+// 		System.out.println(driver.findElement(By.xpath("//div[@class='q-img__image absolute-full']")).getCssValue("height"));
+// 		System.out.println(driver.findElement(By.xpath("//div[@class='q-img__image absolute-full']")).getCssValue("width"));
 		
-		click("//div[@class='row']/button");
-	}
+// 		click("//div[@class='row']/button");
+// 	}
 	
-	@Test
-	public void Markdown() throws InterruptedException
-	{
-		// 2. Markdown Smart Block
-		click("//div[contains(text(),'Markdown')]");
-		click("//div[@class='row']/button");
-	}
+// 	@Test
+// 	public void Markdown() throws InterruptedException
+// 	{
+// 		// 2. Markdown Smart Block
+// 		click("//div[contains(text(),'Markdown')]");
+// 		click("//div[@class='row']/button");
+// 	}
 	
-	@Test
-	public void Social() throws InterruptedException
-	{
-		// 3. Social Smart Block
-		click("//div[contains(text(),'Social')]");
+// 	@Test
+// 	public void Social() throws InterruptedException
+// 	{
+// 		// 3. Social Smart Block
+// 		click("//div[contains(text(),'Social')]");
 
-		// Click Social Media Icons
-		SocialIcons();
-		click("//div[@class='row']/button");
-	}
+// 		// Click Social Media Icons
+// 		SocialIcons();
+// 		click("//div[@class='row']/button");
+// 	}
 	
-	@Test
-	public void Location() throws InterruptedException
-	{
-		// 4. Location Smart Block
-		click("//div[contains(text(),'Location')]");
-		click("//div[@class='row']/button");
-	}
+// 	@Test
+// 	public void Location() throws InterruptedException
+// 	{
+// 		// 4. Location Smart Block
+// 		click("//div[contains(text(),'Location')]");
+// 		click("//div[@class='row']/button");
+// 	}
 	
-	@Test
-	public void VideoYoutube() throws InterruptedException
-	{
-		// 5. Video Youtube With AutoPlay Functionality
-		click("//div[contains(text(),'VideoYoutube')]");
+// 	@Test
+// 	public void VideoYoutube() throws InterruptedException
+// 	{
+// 		// 5. Video Youtube With AutoPlay Functionality
+// 		click("//div[contains(text(),'VideoYoutube')]");
 
-		// To verify Autoplay functionality
-		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
+// 		// To verify Autoplay functionality
+// 		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
 
-		// To click on Skip and Verify main video autoplay
-		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
+// 		// To click on Skip and Verify main video autoplay
+// 		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
 
-		click("//div[@class='row']/button");
-	}
+// 		click("//div[@class='row']/button");
+// 	}
 	
-	@Test
-	public void Carousel() throws InterruptedException
-	{
-		// 6. Carousel Smart Block
-		click("//div[contains(text(),'Carousel')]");
-		click("//div[@class='row']/button");
-	}
+// 	@Test
+// 	public void Carousel() throws InterruptedException
+// 	{
+// 		// 6. Carousel Smart Block
+// 		click("//div[contains(text(),'Carousel')]");
+// 		click("//div[@class='row']/button");
+// 	}
 	
-	@Test
-	public void Action() throws InterruptedException
-	{
-		// 9. Action Smart Block
-		click("//div[contains(text(),'Action')]");
-		clickSocialIcons("//div[contains(text(),'Source-Digital')]");
-		click("//div[@class='row']/button");
-	}
+// 	@Test
+// 	public void Action() throws InterruptedException
+// 	{
+// 		// 9. Action Smart Block
+// 		click("//div[contains(text(),'Action')]");
+// 		clickSocialIcons("//div[contains(text(),'Source-Digital')]");
+// 		click("//div[@class='row']/button");
+// 	}
 	
-	@Test
-	public void VideoMp4() throws InterruptedException
-	{
-		// 10. Video mp4 Smart Block with Autoplay Functionality
-		click("//div[contains(text(),'Video Mp4')]");
+// 	@Test
+// 	public void VideoMp4() throws InterruptedException
+// 	{
+// 		// 10. Video mp4 Smart Block with Autoplay Functionality
+// 		click("//div[contains(text(),'Video Mp4')]");
 
-		// To verify Autoplay functionality
-		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
+// 		// To verify Autoplay functionality
+// 		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
 
-		// To click on Skip and Verify main video autoplay
-		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
+// 		// To click on Skip and Verify main video autoplay
+// 		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
 
-		click("//div[@class='row']/button");
-	}
+// 		click("//div[@class='row']/button");
+// 	}
 	
-	@Test
-	public void VideoVimeo() throws InterruptedException
-	{
-		// 11. Video Vimeo Smart Block with Autoplay Functionlaity
-		click("//div[contains(text(),'VideoVimeo')]");
+// 	@Test
+// 	public void VideoVimeo() throws InterruptedException
+// 	{
+// 		// 11. Video Vimeo Smart Block with Autoplay Functionlaity
+// 		click("//div[contains(text(),'VideoVimeo')]");
 
-		// To verify Autoplay functionality
-		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
+// 		// To verify Autoplay functionality
+// 		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
 
-		// To click on Skip and Verify main video autoplay
-		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
+// 		// To click on Skip and Verify main video autoplay
+// 		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
 
-		click("//div[@class='row']/button");
-	}
+// 		click("//div[@class='row']/button");
+// 	}
 	
-	@Test
-	public void Richtext() throws InterruptedException
-	{
-		// 8. Rich Text Smart Block
-		click("//div[contains(text(),'Richtext')]");
-		openLinkNextTab("//a[contains(text(),'https://sourcedigital.net/#/')]");
-		click("//div[@class='row']/button");
-	}
+// 	@Test
+// 	public void Richtext() throws InterruptedException
+// 	{
+// 		// 8. Rich Text Smart Block
+// 		click("//div[contains(text(),'Richtext')]");
+// 		openLinkNextTab("//a[contains(text(),'https://sourcedigital.net/#/')]");
+// 		click("//div[@class='row']/button");
+// 	}
 	
-	@Test
-	public void Iframe() throws InterruptedException
-	{
-		// 7. Iframe Smart Block
-		click("//div[contains(text(),'Iframe')]");
-		System.out.println(driver.findElement(By.xpath("//div[@class='smart-block-list']/iframe")).getCssValue("min-height"));
-		System.out.println(driver.findElement(By.xpath("//div[@class='smart-block-list']/iframe")).getCssValue("height"));
-		click("//div[@class='row']/button");
-	}
+// 	@Test
+// 	public void Iframe() throws InterruptedException
+// 	{
+// 		// 7. Iframe Smart Block
+// 		click("//div[contains(text(),'Iframe')]");
+// 		System.out.println(driver.findElement(By.xpath("//div[@class='smart-block-list']/iframe")).getCssValue("min-height"));
+// 		System.out.println(driver.findElement(By.xpath("//div[@class='smart-block-list']/iframe")).getCssValue("height"));
+// 		click("//div[@class='row']/button");
+// 	}
 	
 	@Test(priority=1)
 	public void ClickToDial() throws InterruptedException
