@@ -97,24 +97,24 @@ public class Testa
 // 		click("//div[@class='row']/button");
 // 	}
 	
-	@Test
-	public void Markdown() throws InterruptedException
-	{
-		// 2. Markdown Smart Block
-		click("//div[contains(text(),'Markdown')]");
-		click("//div[@class='row']/button");
-	}
-	
 // 	@Test
-// 	public void Social() throws InterruptedException
+// 	public void Markdown() throws InterruptedException
 // 	{
-// 		// 3. Social Smart Block
-// 		click("//div[contains(text(),'Social')]");
-
-// 		// Click Social Media Icons
-// 		SocialIcons();
+// 		// 2. Markdown Smart Block
+// 		click("//div[contains(text(),'Markdown')]");
 // 		click("//div[@class='row']/button");
 // 	}
+	
+	@Test
+	public void Social() throws InterruptedException
+	{
+		// 3. Social Smart Block
+		click("//div[contains(text(),'Social')]");
+
+		// Click Social Media Icons
+		SocialIcons();
+		click("//div[@class='row']/button");
+	}
 	
 // 	@Test
 // 	public void Location() throws InterruptedException
