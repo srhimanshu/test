@@ -64,7 +64,9 @@ public class Testa
 			options.addArguments("--headless");
 			options.addArguments("--window-size=1920,1080");
 			driver = new FirefoxDriver(options);
+			System.out.println("firefox browser launched");
 			driver.manage().window().maximize();
+			System.out.println("firefox browser maximized");
 			wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			js = (JavascriptExecutor) driver;
 			
@@ -79,6 +81,7 @@ public class Testa
 			else
 			{
 				driver.get("https://experience-stg.sourcesync.io/214");
+				System.out.println("url launched");
 			}
 		}
 	}
@@ -88,6 +91,7 @@ public class Testa
 	{
 		// 1. Image Smart Block
 		click("//div[contains(text(),'Image')]");
+		System.out.println("image smartblock opened");
 
 		// Get Height and Width of Image
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='q-img__image absolute-full']")));
@@ -95,6 +99,7 @@ public class Testa
 		System.out.println(driver.findElement(By.xpath("//div[@class='q-img__image absolute-full']")).getCssValue("width"));
 		
 		click("//div[@class='row']/button");
+		System.out.println("image smartblock closed");
 	}
 	
 	@Test
@@ -102,7 +107,9 @@ public class Testa
 	{
 		// 2. Markdown Smart Block
 		click("//div[contains(text(),'Markdown')]");
+		System.out.println("markdown smartblock opened");
 		click("//div[@class='row']/button");
+		System.out.println("markdown smartblcok closed");
 	}
 	
 	@Test
@@ -110,10 +117,12 @@ public class Testa
 	{
 		// 3. Social Smart Block
 		click("//div[contains(text(),'Social')]");
+		System.out.println("social smartblock opened");
 
 		// Click Social Media Icons
 		SocialIcons();
 		click("//div[@class='row']/button");
+		System.out.println("social smartblock closed");
 	}
 	
 	@Test
@@ -121,7 +130,9 @@ public class Testa
 	{
 		// 4. Location Smart Block
 		click("//div[contains(text(),'Location')]");
+		System.out.println("location smartblock opened");
 		click("//div[@class='row']/button");
+		System.out.println("location smartblock closed");
 	}
 	
 	@Test
@@ -129,6 +140,7 @@ public class Testa
 	{
 		// 5. Video Youtube With AutoPlay Functionality
 		click("//div[contains(text(),'VideoYoutube')]");
+		System.out.println("video smartblock opened");
 
 		// To verify Autoplay functionality
 		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
@@ -137,6 +149,7 @@ public class Testa
 		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
 
 		click("//div[@class='row']/button");
+		System.out.println("video smartblock closed");
 	}
 	
 	@Test
@@ -144,7 +157,9 @@ public class Testa
 	{
 		// 6. Carousel Smart Block
 		click("//div[contains(text(),'Carousel')]");
+		System.out.println("carousel smartblock opened");
 		click("//div[@class='row']/button");
+		System.out.println("carousel smartblock closed");
 	}
 	
 	@Test
@@ -152,8 +167,10 @@ public class Testa
 	{
 		// 9. Action Smart Block
 		click("//div[contains(text(),'Action')]");
+		System.out.println("action smartblock opened");
 		clickSocialIcons("//div[contains(text(),'Source-Digital')]");
 		click("//div[@class='row']/button");
+		System.out.println("action smartblock closed");
 	}
 	
 	@Test
@@ -161,7 +178,8 @@ public class Testa
 	{
 		// 10. Video mp4 Smart Block with Autoplay Functionality
 		click("//div[contains(text(),'Video Mp4')]");
-
+		System.out.println("mp4 smartblock opened");
+	
 		// To verify Autoplay functionality
 		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
 
@@ -169,6 +187,7 @@ public class Testa
 		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
 
 		click("//div[@class='row']/button");
+		System.out.println("mp4 smartblock closed");
 	}
 	
 	@Test
@@ -176,6 +195,7 @@ public class Testa
 	{
 		// 11. Video Vimeo Smart Block with Autoplay Functionlaity
 		click("//div[contains(text(),'VideoVimeo')]");
+		System.out.println("vimeo smartblock opened");
 
 		// To verify Autoplay functionality
 		verifyAutoplayVideoSmartBlock("//div[@class='vjs-control-bar']/button");
@@ -184,6 +204,7 @@ public class Testa
 		clickSkipVerifyMainVideoAutoplay("//span[contains(text(),'Skip')]",distribution_type_class_level);
 
 		click("//div[@class='row']/button");
+		System.out.println("vimeo smartblock closed");
 	}
 	
 	@Test
@@ -191,8 +212,10 @@ public class Testa
 	{
 		// 8. Rich Text Smart Block
 		click("//div[contains(text(),'Richtext')]");
+		System.out.println("richtext smartblock opened");
 		openLinkNextTab("//a[contains(text(),'https://sourcedigital.net/#/')]");
 		click("//div[@class='row']/button");
+		System.out.println("richtext smartblock closed");
 	}
 	
 	@Test
@@ -200,9 +223,11 @@ public class Testa
 	{
 		// 7. Iframe Smart Block
 		click("//div[contains(text(),'Iframe')]");
+		System.out.println("iframe smartblock opened");
 		System.out.println(driver.findElement(By.xpath("//div[@class='smart-block-list']/iframe")).getCssValue("min-height"));
 		System.out.println(driver.findElement(By.xpath("//div[@class='smart-block-list']/iframe")).getCssValue("height"));
 		click("//div[@class='row']/button");
+		System.out.println("iframe smartblock closed");
 	}
 	
 	@Test(priority=1)
@@ -211,6 +236,7 @@ public class Testa
 		// 12.Click To Dial Smart Block
 		try {
 			click("//div[contains(text(),'Click To Dial')]");
+			System.out.println("clicktodial smartblock opened");
 		} catch(Exception e)
 		{
 			driver.quit();
