@@ -261,10 +261,12 @@ public class Testa
 		String currentWindow = driver.getWindowHandle();
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
 		driver.findElement(By.xpath(xpath)).click();
+		System.out.println("social icon clicked");
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
 		Thread.sleep(3000);
 		driver.close();
+		System.out.println("new tab closed");
 		driver.switchTo().window(currentWindow);
 	}
 
@@ -304,8 +306,10 @@ public class Testa
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
 		driver.get(url);
+		System.out.println("link opened in next tab");
 		Thread.sleep(3000);
 		driver.close();
+		System.out.println("new tab closed");
 		driver.switchTo().window(currentWindow);
 	}
 }
