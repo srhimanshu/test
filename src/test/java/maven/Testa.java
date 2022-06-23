@@ -205,17 +205,17 @@ public class Testa
 // 		click("//div[@class='row']/button");
 // 	}
 	
-	@Test(priority=1)
-	public void ClickToDial() throws InterruptedException
-	{
-		// 12.Click To Dial Smart Block
-		try {
-			click("//div[contains(text(),'Click To Dial')]");
-		} catch(Exception e)
-		{
-			driver.quit();
-		}
-	}
+// 	@Test(priority=1)
+// 	public void ClickToDial() throws InterruptedException
+// 	{
+// 		// 12.Click To Dial Smart Block
+// 		try {
+// 			click("//div[contains(text(),'Click To Dial')]");
+// 		} catch(Exception e)
+// 		{
+// 			driver.quit();
+// 		}
+// 	}
 	
 	@AfterClass
 	public void end() 
