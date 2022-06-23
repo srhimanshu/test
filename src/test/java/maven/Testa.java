@@ -65,6 +65,7 @@ public class Testa
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--headless");
 			options.addArguments("--window-size=1920,1080");
+			options.add_preference('media.eme.enabled', true);
 			driver = new FirefoxDriver(options);
 			System.out.println("firefox browser launched");
 			driver.manage().window().maximize();
