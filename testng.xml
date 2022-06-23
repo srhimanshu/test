@@ -14,8 +14,8 @@
 		<parameter name="distribution_type" value="overlay"></parameter>
 		<classes>
 			<class name="maven.Testa"></class>
-		</classes> -->
-	</test> 
+		</classes> 
+	</test> -->
 	
 	<test name="Firefox Video">
 		<parameter name="browser" value="firefox"></parameter>
