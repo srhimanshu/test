@@ -32,7 +32,7 @@ public class Testa
 		distribution_type_class_level = distribution_type;
 		if(browser.equals("chrome"))
 		{
-			String chromeDriverPath = System.getProperty("user.dir") + "/chromedriver";
+			String chromeDriverPath = System.getProperty("user.dir") + "/chromedriver101";
 			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
